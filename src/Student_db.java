@@ -52,7 +52,15 @@ public class Student_db {
             System.out.println("deleted the rows that contains alfiya: "+ rowdeleted);
 
 
-            //3.
+            //3. closing resources.
+            con.close();
+            prestmt.close();
+            stmt.close();
+            rs.close();
+            preupdate.close();
+            delstmt.close();
+
+
 
         }
         catch (Exception e) {
